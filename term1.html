@@ -6,8 +6,44 @@
    </head>
   <body>
       <h1>Terminologi</h1>
-      <p>Repository betyder:</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin iaculis a diam et venenatis. Sed sollicitudin posuere dolor sit amet rutrum. Fusce consequat magna sit amet mi hendrerit fermentum. Nam justo purus, consectetur ut elit tincidunt, cursus hendrerit massa. Phasellus imperdiet sapien vitae ligula dapibus dignissim. Integer vitae sodales dolor. Aliquam a dolor nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla id finibus lacus. Donec sed est sed nisi convallis ultricies. Nam posuere ex vel leo tempor, a ornare nibh tempus. Mauris eu neque nec quam posuere porta ac ut nibh. Vestibulum nec lectus vitae purus ultricies suscipit.</p>
-      <p>Branch betyder:</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin iaculis a diam et venenatis. Sed sollicitudin posuere dolor sit amet rutrum. Fusce consequat magna sit amet mi hendrerit fermentum. Nam justo purus, consectetur ut elit tincidunt, cursus hendrerit massa. Phasellus imperdiet sapien vitae ligula dapibus dignissim. Integer vitae sodales dolor. Aliquam a dolor nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla id finibus lacus. Donec sed est sed nisi convallis ultricies. Nam posuere ex vel leo tempor, a ornare nibh tempus. Mauris eu neque nec quam posuere porta ac ut nibh. Vestibulum nec lectus vitae purus ultricies suscipit.</p>
+      <h2>Repository:</h2>
+      <p>Repository är helt enkelt en container för dina ändringar, där dessa lagras under arbetets gång. Det är ditt hem - ditt hus, där alla grenar (branches) som jobbas på samlas. Flera kan samlas under samma repository för att samarbeta. Då klonar alla kollegor samma grund - jobbar i samma kod, via olika delar av detta branch-fyllda samlingsbräde. Så - ni jobbar ihop och alla ändringar syns och arbetas på men allt sker alltså i detta repository. Dessutom kan du ha ett lokalt repository - ditt specifika rum i detta hus, medan resten har sina rum. För att jobba ihop måste du komma ut ur ditt rum och möta de andra för att visa exakt vad DU har gjort sen senast. Även om du jobbar själv så jobbar du på ditt lokala repository och uppdaterar till serverns repository för att dela med de andra.  </p>
+      <h2>Branch:</h2>
+      <p>En branch är en version av koden - tagen från en särskild punkt i processen och som kan delas eller användas individuellt. Ofta skapas en branch självt av dig och så kan du dela ditt arbete (commita) för att presentera. Brancher är som grenar ut från det stora trädet (det delade arbetet, dit alla samlar sin kod och det som blir slutprodukten). Branchen finns till för att inte störa det slutgiltiga resultatet och gör så att man kan prova olika versioner, hjälpa varandra och slutligen få en riktigt bra produkt - men ändå lyckas med att jobba parallelt och utan att förstöra - man behöver jobba på egen hand på en egen branch för att separera varandras jobb från varandra. </p>
+      <h2>Commit:</h2>
+      <p>En commit är en screenshot av ditt arbete som de andra (eller du själv) kan gå tillbaka till och granska - en safespot som gör att ingen utan vidare skickar allt sitt arbete till main (huvudträdet). </p>
+      <h2>Push:</h2>
+      <p>Att pusha sitt arbete till de andra gör att de har möjlighet att pull it in = se vad du gjort för ändringar - trots att det inte är indraget i projektets rotsystem (main). Utan att commita går det inte att merga. Det betyder inte att du ska pusha sällan - pusha ofta - så det sker ett konitnuerligt och frekvent utbyte av era arbeten. Eller så att du själv håller din server uppdaterad på dina ändringar. </p>
+      <h2>Pull: </h2>
+      <p>Att dra in = pull. Alltså - någon andra publicerar/pushar sina förändringar till er gemensamma plattform/servern = ni kan alla dra in varandras jobb i er branch. På så sätt vet ni var de andra är. Då blir det lättare att hålla slutprodukten/trädet/main fri från buggar. Det mergar in ändringar från main in i din branch. Gör pull jätteofta för att veta att du ligger i realtid, och de andra ska också göra push och pull.. Keep in touch!</p>
+      <h2>Merge:</h2>
+      <p>Att skicka sina ändringar in i sista steget vilket är main-branchen - det träd det slutprodukten kommer ur till sist. </p>
+      <h2>Fork:</h2>
+      <p>En fork är din säkerhet om du jobbar med något arbete som i grunden kan behållas intakt - kanske för att det är ett arbete du egentligen inte behöver använda, men provar dig fram i. Det kan också ha att göra med att du utgår från någon annans kod i ett arbete men i slutändan vill jobba HELT separat. Det som händer är att forken är en kopia som skapar ett helt eget repository på din profil (på t.ex. Github..!). Se till att du forkar och gör clonen från ditt (ditt nya! ditt forkade - alltså!) repository för att inte börja i fel ände och renovera någon annan kod än den du menade att ändra i.. </p>
+      <h2>Head/HEAD:</h2>
+      <p>Att åsyfta en särskilt branch kan man göra genom att referera till 'head', en som jämförs med 'main'. En HEAD är egentligen en särskilt commit i en branch och det är ofta den du ÄR i och det är gjort som för att betona att vi nu pratar om en särskild, en aktiv och aktuell head. HEAD! Min aktiva commit! </p>
+      <h2>Pull request:</h2>
+      <p>Istället för att lite huller om buller slänga upp merges konstant från olika kollegors håll kan man låta de andra godkänna (eller ändra/be dig ändra) en commit eller hel branch. Hela branchen kanske konstateras vara onödig. Tråkig att flera timmars arbete kan vara onödigt (eller krocka med någon annans förslag) - men det är bra - för så tråkigt som det är så skönt är det att slippa merge conflicts. </p>
+      <h2>Merge conflicts:</h2>
+      <p>Säg att du inte vet om din kod kommer passa ihop med någon kollegas arbete - men denne är inte på jobbet - så du provar. Sen visar det sig att hen visst var online och just lagt upp kod som kommer krocka med din. Din brist på kommunikation gör (du valde att göra en merge utan kommunikation).. Just nu sitter ni i en sits när ni har mergat och ingen kan se exakt varför det uppstått en "merge conflict" - typ; är det Din eller Min kod där - och jag har glömt vad som var tanken med exakt den där ändringen.. Hade ni "frågat" varandra innan (med pull request!) hade ni sluppit söka igenom koden för att lösa konflikten. Akta så att ni slipper verkliga konflikter..!</p>
+      <h2>Fetch:</h2>
+      <p>En fetch är att dra in andras ändringar i din branch utan att nödvändigtvis acceptera en commit.. Det är bra för att hålla koll på var på vägen de andra är, även om det inte är en riktig merge.   </p>
+      <h2>Stage:</h2>
+      <p>När du gjort dina änringar i din text-editor (typ Visual Stuio Code eller Atom) så stagear du (låter dina ändringar vänta) på att bli commitade (screenshotade) av versionshanteringsverktyget du använder. Det är alltså som att ställa i ordning familjen för ett familjefoto. Stunden när alla ler innan fotot tas..</p>
+      <h2>Git:</h2>
+      <p>Git är ett open source-verktyg vilket innebär att det går att dela arbeten. En öppen källa. Går att jämföra med Google Drive som också är en öppen källa och ju går att arbeta parallellt med.  </p>
+      <h2>Github: </h2>
+      <p>Ett nätverk, ett använbart community där vi samlar och kan presentera våra arbeten i olika syften: utbildning, som ett cv eller för att kommunicera med jobbkamrater. Eller för att ha översikt över ditt eget arbete. Programmeringvärldens Facebook!</p>
+      <h2>Github Desktop</h2>
+      <p>En app där du kan samarbeta med kollegor utan att behöva gå via internet - via den kan du commita, merge, pull och push dina projekt. Ladda upp ditt repository i GitHub Desktop och jobba ihop!</p>
+      <h2>Project:</h2>
+      <p>Ett användbart överblickande verktyg på Github där någon eller alla i ett projekt kan jobba fram en plan. Vad behöver göras. Kontinuerligt kan denna uppdateras när nya uppgifter och buggar måste lösas. Här kan man följa arbetet. </p>
+      <h2>Issues:</h2>
+      <p>Låt saker som ska göras hamna här. Vad måste vi klara av? Det kan vara att ändra färg på någon text för att ta ett lätt exempel. Då kan jag assigna (skriva upp mig själv) på en uppgift, genomföra den och göra en pull request. Vad tycker mina kollegor om det jag gjorde för att lösa en uppgift (issue)?</p>
+      <h2>Bug:</h2>
+      <p>Vad är en bug? Jo, det kan ju handla om att kod inte är komplett eller att något i koden inte längre stämmer. Då kan en programmerare gå in i koden, förslagsvis skapa en ny branch, och lösa problemet (en bug fix).</p>
+      <h2>README-fiL:</h2>
+      <p>Här kan du som projektledare lägga upp information för den som ska delta i projektet eller till den som är nyfiken på hur ditt projekt går - basal information om projektet. Kanske förväntningar på projektet "Vad är idén med detta repository? Varför finns det?". Lite riktlinjer och guidande instruktioner kan finnas här och laddas upp som en fil i ditt repository och finns ALLTID där. Det är en närmast obligatorisk del i ett projekt. Ha en READme-fil. :)</p>
+      <h2></h2>
+
 </html>
